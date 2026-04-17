@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sök – Hälsokällan</title>
+  <meta name="description" content="Sök i Hälsokällans kompletta innehåll – träningsprogram, övningar, kostplaner och råd.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+</head>
+<body>
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo"><div class="navbar__logo-icon">🌿</div>Hälsokällan</a>
+      <div class="navbar__nav">
+        <a href="index.html" class="navbar__nav-link">Hem</a>
+        <div class="dropdown"><a href="traning/index.html" class="navbar__nav-link">Träning <span class="dropdown__arrow">▾</span></a><div class="dropdown__menu"><a href="traning/styrketraning.html" class="dropdown__item">💪 Styrketräning</a><a href="traning/konditionstraning.html" class="dropdown__item">🏃 Konditionsträning</a><a href="traning/rorlighet.html" class="dropdown__item">🧘 Rörlighet</a><a href="traning/hemmatraning.html" class="dropdown__item">🏠 Hemmaträning</a><a href="traning/kampsport.html" class="dropdown__item">🥊 Kampsport</a></div></div>
+        <div class="dropdown"><a href="kost/index.html" class="navbar__nav-link">Kost <span class="dropdown__arrow">▾</span></a><div class="dropdown__menu"><a href="kost/kostprogram.html" class="dropdown__item">🥗 Kostprogram</a><a href="kost/makrorakning.html" class="dropdown__item">📊 Makroräkning</a><a href="kost/maltidsplanering.html" class="dropdown__item">📅 Måltidsplanering</a><a href="kost/livsmedelsguider.html" class="dropdown__item">🛒 Livsmedelsguide</a><a href="kost/kosttillskott.html" class="dropdown__item">💊 Kosttillskott</a></div></div>
+        <div class="dropdown"><a href="aldersgrupper/index.html" class="navbar__nav-link">Åldersgrupper <span class="dropdown__arrow">▾</span></a><div class="dropdown__menu"><a href="aldersgrupper/barn.html" class="dropdown__item">🧒 Barn & Ungdomar</a><a href="aldersgrupper/unga-vuxna.html" class="dropdown__item">🏋️ Unga Vuxna (18–30)</a><a href="aldersgrupper/vuxna.html" class="dropdown__item">👨‍👩‍👧 Vuxna (31–50)</a><a href="aldersgrupper/medelalder.html" class="dropdown__item">🧓 Medelålders (51–65)</a><a href="aldersgrupper/seniorer.html" class="dropdown__item">👴 Seniorer (65+)</a></div></div>
+        <a href="aterhämtning.html" class="navbar__nav-link">Återhämtning</a>
+        <a href="sok.html" class="navbar__search-btn aktiv" title="Sök">🔍</a>
+      </div>
+      <button class="navbar__hamburger" aria-label="Öppna meny"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="navbar__mobile-menu">
+    <a href="index.html" class="mobile-nav-link">🏠 Hem</a>
+    <a href="traning/index.html" class="mobile-nav-link">💪 Träning</a>
+    <a href="kost/index.html" class="mobile-nav-link">🥗 Kost</a>
+    <a href="aldersgrupper/index.html" class="mobile-nav-link">👤 Åldersgrupper</a>
+    <a href="aterhämtning.html" class="mobile-nav-link">😴 Återhämtning</a>
+  </div>
+</nav>
+
+<section class="hero-sub">
+  <div class="container">
+    <h1>🔍 Sök i Hälsokällan</h1>
+    <p>Hitta program, övningar, kostråd och guider – direkt.</p>
+  </div>
+</section>
+
+<section class="sektion">
+  <div class="container">
+    <form class="sök-bar" id="sök-form" style="max-width:700px;margin:0 auto 1.5rem;">
+      <input type="text" id="sök-input" name="q" placeholder="Sök t.ex. knäböj, LCHF, löpning, seniorer…" aria-label="Sök">
+      <button type="submit">Sök</button>
+    </form>
+
+    <div style="text-align:center;margin-bottom:1rem;">
+      <span style="font-size:.85rem;color:var(--grå-500);">Populära sökningar: </span>
+      <a href="?q=knäböj" class="badge badge--grå" style="margin:.2rem;text-decoration:none;cursor:pointer;">knäböj</a>
+      <a href="?q=LCHF" class="badge badge--grå" style="margin:.2rem;text-decoration:none;">LCHF</a>
+      <a href="?q=löpning" class="badge badge--grå" style="margin:.2rem;text-decoration:none;">löpning</a>
+      <a href="?q=seniorer" class="badge badge--grå" style="margin:.2rem;text-decoration:none;">seniorer</a>
+      <a href="?q=nybörjare" class="badge badge--grå" style="margin:.2rem;text-decoration:none;">nybörjare</a>
+      <a href="?q=protein" class="badge badge--grå" style="margin:.2rem;text-decoration:none;">protein</a>
+      <a href="?q=hemmaträning" class="badge badge--grå" style="margin:.2rem;text-decoration:none;">hemmaträning</a>
+    </div>
+
+    <div id="sök-count" class="sök-resultat-count"></div>
+    <div id="sök-resultat"></div>
+
+    <div id="sök-start" style="text-align:center;padding:3rem;color:var(--grå-500);">
+      <div style="font-size:3rem;margin-bottom:.75rem;">🌿</div>
+      <p style="font-size:1.1rem;font-weight:600;color:var(--grå-700);">Vad letar du efter?</p>
+      <p>Skriv ett sökord ovan för att hitta träningsprogram, övningar, kostplaner och mer.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div><div class="footer__brand">🌿 Hälsokällan</div><p class="footer__tagline">Sveriges kompletta gratis hälsoresurs.</p></div>
+      <div><div class="footer__rubrik">Träning</div><a href="traning/styrketraning.html" class="footer__länk">Styrketräning</a><a href="traning/konditionstraning.html" class="footer__länk">Konditionsträning</a><a href="traning/hemmatraning.html" class="footer__länk">Hemmaträning</a></div>
+      <div><div class="footer__rubrik">Kost</div><a href="kost/kostprogram.html" class="footer__länk">Kostprogram</a><a href="kost/makrorakning.html" class="footer__länk">Makroräkning</a><a href="kost/kosttillskott.html" class="footer__länk">Kosttillskott</a></div>
+      <div><div class="footer__rubrik">Åldersgrupper</div><a href="aldersgrupper/barn.html" class="footer__länk">Barn & Ungdomar</a><a href="aldersgrupper/unga-vuxna.html" class="footer__länk">Unga Vuxna</a><a href="aldersgrupper/seniorer.html" class="footer__länk">Seniorer</a></div>
+    </div>
+    <div class="footer__bottom"><span>© 2025 Hälsokällan</span></div>
+  </div>
+</footer>
+
+<script src="js/search-data.js"></script>
+<script src="js/main.js"></script>
+<script>
+  document.getElementById('sök-form').addEventListener('submit', () => {
+    document.getElementById('sök-start').style.display = 'none';
+  });
+  window.addEventListener('load', () => {
+    if (new URLSearchParams(window.location.search).get('q')) {
+      document.getElementById('sök-start').style.display = 'none';
+    }
+  });
+</script>
+</body>
+</html>

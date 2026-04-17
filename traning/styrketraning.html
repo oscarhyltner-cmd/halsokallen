@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styrketräning – Program, Övningar och Teknik | Hälsokällan</title>
+  <meta name="description" content="Kompletta styrketräningsprogram för nybörjare och avancerade. 20 övningar med beskrivningar, muskelgrupper och teknikguider på svenska.">
+  <meta name="keywords" content="styrketräning, träningsprogram, gym, övningar, nybörjare, muskler, knäböj, marklyft, bänkpress">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+</head>
+<body>
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar__inner">
+      <a href="../index.html" class="navbar__logo"><div class="navbar__logo-icon">🌿</div>Hälsokällan</a>
+      <div class="navbar__nav">
+        <a href="../index.html" class="navbar__nav-link">Hem</a>
+        <div class="dropdown"><a href="index.html" class="navbar__nav-link aktiv">Träning <span class="dropdown__arrow">▾</span></a><div class="dropdown__menu"><a href="styrketraning.html" class="dropdown__item">💪 Styrketräning</a><a href="konditionstraning.html" class="dropdown__item">🏃 Konditionsträning</a><a href="rorlighet.html" class="dropdown__item">🧘 Rörlighet</a><a href="hemmatraning.html" class="dropdown__item">🏠 Hemmaträning</a><a href="kampsport.html" class="dropdown__item">🥊 Kampsport</a></div></div>
+        <div class="dropdown"><a href="../kost/index.html" class="navbar__nav-link">Kost <span class="dropdown__arrow">▾</span></a><div class="dropdown__menu"><a href="../kost/kostprogram.html" class="dropdown__item">🥗 Kostprogram</a><a href="../kost/makrorakning.html" class="dropdown__item">📊 Makroräkning</a><a href="../kost/maltidsplanering.html" class="dropdown__item">📅 Måltidsplanering</a><a href="../kost/kosttillskott.html" class="dropdown__item">💊 Kosttillskott</a></div></div>
+        <div class="dropdown"><a href="../aldersgrupper/index.html" class="navbar__nav-link">Åldersgrupper <span class="dropdown__arrow">▾</span></a><div class="dropdown__menu"><a href="../aldersgrupper/barn.html" class="dropdown__item">🧒 Barn & Ungdomar</a><a href="../aldersgrupper/unga-vuxna.html" class="dropdown__item">🏋️ Unga Vuxna</a><a href="../aldersgrupper/vuxna.html" class="dropdown__item">👨‍👩‍👧 Vuxna</a><a href="../aldersgrupper/medelalder.html" class="dropdown__item">🧓 Medelålders</a><a href="../aldersgrupper/seniorer.html" class="dropdown__item">👴 Seniorer</a></div></div>
+        <a href="../aterhämtning.html" class="navbar__nav-link">Återhämtning</a>
+        <a href="../sok.html" class="navbar__search-btn">🔍</a>
+      </div>
+      <button class="navbar__hamburger" aria-label="Öppna meny"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="navbar__mobile-menu">
+    <a href="../index.html" class="mobile-nav-link">🏠 Hem</a>
+    <a href="styrketraning.html" class="mobile-nav-link">💪 Styrketräning</a>
+    <a href="konditionstraning.html" class="mobile-nav-link">🏃 Konditionsträning</a>
+    <a href="rorlighet.html" class="mobile-nav-link">🧘 Rörlighet</a>
+    <a href="hemmatraning.html" class="mobile-nav-link">🏠 Hemmaträning</a>
+    <a href="../kost/index.html" class="mobile-nav-link">🥗 Kost</a>
+    <a href="../aldersgrupper/index.html" class="mobile-nav-link">👤 Åldersgrupper</a>
+  </div>
+</nav>
+
+<section class="hero-sub">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">Hem</a><span class="breadcrumb__sep">›</span><a href="index.html">Träning</a><span class="breadcrumb__sep">›</span><span>Styrketräning</span></div>
+    <h1>💪 Styrketräning</h1>
+    <p>Program, övningar och teknikguider för alla nivåer – från nybörjare till avancerade.</p>
+  </div>
+</section>
+
+<section class="sektion">
+  <div class="container">
+    <div class="tab-nav">
+      <a href="#program" class="tab-nav__link aktiv">Program</a>
+      <a href="#övningar" class="tab-nav__link">Övningar (20 st)</a>
+      <a href="#teknik" class="tab-nav__link">Teknik & Tips</a>
+      <a href="#nybörjare" class="tab-nav__link">Nybörjarguide</a>
+    </div>
+
+    <!-- PROGRAM -->
+    <div id="program">
+      <h2 class="sektion-rubrik">Träningsprogram</h2>
+      <p class="sektion-underrubrik">Välj ett program som passar din nivå och tillgängliga tid.</p>
+
+      <div class="grid grid-2" style="margin-bottom:2rem;">
+
+        <!-- Program 1 -->
+        <div class="program-card" id="prog-3dag">
+          <div class="program-card__topp">
+            <div class="program-card__meta">
+              <span class="badge badge--nybörjare">Nybörjare</span>
+              <span class="badge badge--grå">3 dagar/vecka</span>
+              <span class="badge badge--grå">Helkropp</span>
+            </div>
+            <div class="program-card__namn">3-dagars Nybörjarprogram</div>
+            <div class="program-card__beskr">Perfekt för dig som precis börjat styrketräna. Helkroppspass måndag, onsdag och fredag ger din kropp tid att återhämta sig.</div>
+          </div>
+          <div class="program-card__body">
+            <div class="program-card__dag-rubrik">Dag 1, 3 & 5 – Helkropp (varierande fokus)</div>
+            <div class="tabell-wrapper">
+              <table>
+                <thead><tr><th>Övning</th><th>Set</th><th>Reps</th><th>Vila</th></tr></thead>
+                <tbody>
+                  <tr><td>Knäböj</td><td>3</td><td>8–10</td><td>2–3 min</td></tr>
+                  <tr><td>Bänkpress</td><td>3</td><td>8–10</td><td>2–3 min</td></tr>
+                  <tr><td>Sittande rodd</td><td>3</td><td>10–12</td><td>2 min</td></tr>
+                  <tr><td>Axelpress (DB)</td><td>3</td><td>10–12</td><td>2 min</td></tr>
+                  <tr><td>Rumänsk marklyft</td><td>3</td><td>10–12</td><td>2 min</td></tr>
+                  <tr><td>Plankan</td><td>3</td><td>30–60 s</td><td>1 min</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="info-box info-box--tips" style="margin-top:1rem;">
+              <div class="info-box__rubrik">Progression</div>
+              <p>Öka vikten med 2,5 kg när du klarar alla set och reps med god teknik. Fokusera alltid på teknik före vikt.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 2 -->
+        <div class="program-card">
+          <div class="program-card__topp">
+            <div class="program-card__meta">
+              <span class="badge badge--medel">Medel</span>
+              <span class="badge badge--grå">4 dagar/vecka</span>
+              <span class="badge badge--grå">Överkropp/Underkropp</span>
+            </div>
+            <div class="program-card__namn">4-dagars Upper/Lower Split</div>
+            <div class="program-card__beskr">Klassisk split som fungerar utmärkt för de flesta som tränat 6–12 månader. Träna 2 överkropps- och 2 underkroppspass per vecka.</div>
+          </div>
+          <div class="program-card__body">
+            <div class="program-card__dag-rubrik">Dag 1 & 3 – Överkropp</div>
+            <div class="tabell-wrapper">
+              <table>
+                <thead><tr><th>Övning</th><th>Set</th><th>Reps</th></tr></thead>
+                <tbody>
+                  <tr><td>Bänkpress</td><td>4</td><td>6–8</td></tr>
+                  <tr><td>Skivstångsrodd</td><td>4</td><td>6–8</td></tr>
+                  <tr><td>Axelpress</td><td>3</td><td>10–12</td></tr>
+                  <tr><td>Pull-ups</td><td>3</td><td>8–10</td></tr>
+                  <tr><td>Tricepsdips</td><td>3</td><td>10–12</td></tr>
+                  <tr><td>Bicepscurl</td><td>3</td><td>12–15</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="program-card__dag-rubrik">Dag 2 & 4 – Underkropp</div>
+            <div class="tabell-wrapper">
+              <table>
+                <thead><tr><th>Övning</th><th>Set</th><th>Reps</th></tr></thead>
+                <tbody>
+                  <tr><td>Knäböj</td><td>4</td><td>6–8</td></tr>
+                  <tr><td>Rumänsk marklyft</td><td>4</td><td>8–10</td></tr>
+                  <tr><td>Benbicepspress</td><td>3</td><td>10–12</td></tr>
+                  <tr><td>Benextension</td><td>3</td><td>12–15</td></tr>
+                  <tr><td>Höftlyft</td><td>3</td><td>12–15</td></tr>
+                  <tr><td>Tåhävningar</td><td>4</td><td>15–20</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 3 -->
+        <div class="program-card">
+          <div class="program-card__topp">
+            <div class="program-card__meta">
+              <span class="badge badge--avancerad">Avancerad</span>
+              <span class="badge badge--grå">5–6 dagar/vecka</span>
+              <span class="badge badge--grå">PPL-split</span>
+            </div>
+            <div class="program-card__namn">Push / Pull / Legs (PPL)</div>
+            <div class="program-card__beskr">En av de mest beprövade split-metoderna. Kör varje muskelgrupp 2 gånger per vecka med olika fokus.</div>
+          </div>
+          <div class="program-card__body">
+            <div class="program-card__dag-rubrik">Push (Bröst, Axlar, Triceps)</div>
+            <div class="tabell-wrapper">
+              <table>
+                <thead><tr><th>Övning</th><th>Set × Reps</th></tr></thead>
+                <tbody>
+                  <tr><td>Bänkpress</td><td>4 × 5</td></tr>
+                  <tr><td>Lutande DB-press</td><td>3 × 10</td></tr>
+                  <tr><td>Axelpress (stående)</td><td>4 × 6</td></tr>
+                  <tr><td>Lateral raises</td><td>4 × 15</td></tr>
+                  <tr><td>Tryckning (Triceps)</td><td>3 × 12</td></tr>
+                  <tr><td>Dips</td><td>3 × max</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="program-card__dag-rubrik">Pull (Rygg, Biceps, Bakaxel)</div>
+            <div class="tabell-wrapper">
+              <table>
+                <thead><tr><th>Övning</th><th>Set × Reps</th></tr></thead>
+                <tbody>
+                  <tr><td>Marklyft</td><td>4 × 5</td></tr>
+                  <tr><td>Pull-ups (viktad)</td><td>4 × 6</td></tr>
+                  <tr><td>Skivstångsrodd</td><td>4 × 8</td></tr>
+                  <tr><td>Sittande rodd (kabel)</td><td>3 × 12</td></tr>
+                  <tr><td>Face pulls</td><td>3 × 15</td></tr>
+                  <tr><td>Hammercurl</td><td>3 × 12</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="program-card__dag-rubrik">Legs (Ben & Säte)</div>
+            <div class="tabell-wrapper">
+              <table>
+                <thead><tr><th>Övning</th><th>Set × Reps</th></tr></thead>
+                <tbody>
+                  <tr><td>Knäböj (djup)</td><td>4 × 5</td></tr>
+                  <tr><td>Front squat</td><td>3 × 8</td></tr>
+                  <tr><td>Utfall (gående)</td><td>3 × 12/ben</td></tr>
+                  <tr><td>Benpress</td><td>3 × 12</td></tr>
+                  <tr><td>Nordic curl</td><td>3 × 6</td></tr>
+                  <tr><td>Tåhävningar</td><td>5 × 20</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 4 -->
+        <div class="program-card">
+          <div class="program-card__topp">
+            <div class="program-card__meta">
+              <span class="badge badge--nybörjare">Nybörjare</span>
+              <span class="badge badge--grå">2 dagar/vecka</span>
+              <span class="badge badge--grå">Minimalprogram</span>
+            </div>
+            <div class="program-card__namn">2-dagars Minimalprogram</div>
+            <div class="program-card__beskr">För dig med lite tid. Bara 2 träningspass per vecka med de viktigaste övningarna ger ändå fantastiska resultat.</div>
+          </div>
+          <div class="program-card__body">
+            <div class="program-card__dag-rubrik">Pass A – Måndag</div>
+            <div class="tabell-wrapper">
+              <table>
+                <thead><tr><th>Övning</th><th>Set × Reps</th></tr></thead>
+                <tbody>
+                  <tr><td>Knäböj</td><td>3 × 8</td></tr>
+                  <tr><td>Bänkpress</td><td>3 × 8</td></tr>
+                  <tr><td>Sittande rodd</td><td>3 × 10</td></tr>
+                  <tr><td>Plankan</td><td>3 × 45 s</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="program-card__dag-rubrik">Pass B – Torsdag</div>
+            <div class="tabell-wrapper">
+              <table>
+                <thead><tr><th>Övning</th><th>Set × Reps</th></tr></thead>
+                <tbody>
+                  <tr><td>Marklyft</td><td>3 × 6</td></tr>
+                  <tr><td>Axelpress</td><td>3 × 8</td></tr>
+                  <tr><td>Pull-ups/Lat-pulldown</td><td>3 × 8</td></tr>
+                  <tr><td>Höftlyft</td><td>3 × 12</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 5 -->
+        <div class="program-card">
+          <div class="program-card__topp">
+            <div class="program-card__meta">
+              <span class="badge badge--medel">Medel</span>
+              <span class="badge badge--grå">3 dagar/vecka</span>
+              <span class="badge badge--grå">Styrkefokus</span>
+            </div>
+            <div class="program-card__namn">StrongLifts 5×5 – Styrkefokus</div>
+            <div class="program-card__beskr">Alternera två pass (A och B) för att bygga ren styrka med de stora grundövningarna. Enkel och extremt effektiv.</div>
+          </div>
+          <div class="program-card__body">
+            <div class="program-card__dag-rubrik">Pass A (mån/fre)</div>
+            <div class="tabell-wrapper">
+              <table>
+                <thead><tr><th>Övning</th><th>Set × Reps</th></tr></thead>
+                <tbody>
+                  <tr><td>Knäböj</td><td>5 × 5</td></tr>
+                  <tr><td>Bänkpress</td><td>5 × 5</td></tr>
+                  <tr><td>Skivstångsrodd</td><td>5 × 5</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="program-card__dag-rubrik">Pass B (ons)</div>
+            <div class="tabell-wrapper">
+              <table>
+                <thead><tr><th>Övning</th><th>Set × Reps</th></tr></thead>
+                <tbody>
+                  <tr><td>Knäböj</td><td>5 × 5</td></tr>
+                  <tr><td>Axelpress</td><td>5 × 5</td></tr>
+                  <tr><td>Marklyft</td><td>1 × 5</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="info-box info-box--tips" style="margin-top:1rem;">
+              <div class="info-box__rubrik">Progression</div>
+              <p>Lägg till 2,5 kg per pass på överkroppsövningar och 5 kg per pass på underkroppsövningar. Kör tills du inte längre kan göra alla 5×5.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 6 -->
+        <div class="program-card">
+          <div class="program-card__topp">
+            <div class="program-card__meta">
+              <span class="badge badge--avancerad">Avancerad</span>
+              <span class="badge badge--grå">4 dagar/vecka</span>
+              <span class="badge badge--grå">Hypertrofi</span>
+            </div>
+            <div class="program-card__namn">Hypertrofi-program (Muskelbygge)</div>
+            <div class="program-card__beskr">Optimerat för maximal muskeltillväxt med hög volym och fokus på kontrollerade rörelser och muskelkontakt.</div>
+          </div>
+          <div class="program-card__body">
+            <div class="program-card__dag-rubrik">Dag 1 – Bröst & Triceps</div>
+            <div class="tabell-wrapper">
+              <table>
+                <thead><tr><th>Övning</th><th>Set × Reps</th></tr></thead>
+                <tbody>
+                  <tr><td>Bänkpress</td><td>4 × 10</td></tr>
+                  <tr><td>Lutande DB-press</td><td>3 × 12</td></tr>
+                  <tr><td>Kabelkorsning</td><td>3 × 15</td></tr>
+                  <tr><td>Tryckning (kabel)</td><td>4 × 12</td></tr>
+                  <tr><td>Dips</td><td>3 × 12</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="program-card__dag-rubrik">Dag 2 – Rygg & Biceps</div>
+            <div class="tabell-wrapper">
+              <table>
+                <thead><tr><th>Övning</th><th>Set × Reps</th></tr></thead>
+                <tbody>
+                  <tr><td>Pull-ups</td><td>4 × max</td></tr>
+                  <tr><td>Sittande rodd</td><td>4 × 10</td></tr>
+                  <tr><td>Enarms DB-rodd</td><td>3 × 12</td></tr>
+                  <tr><td>Bicepscurl (stång)</td><td>4 × 10</td></tr>
+                  <tr><td>Hammercurl</td><td>3 × 12</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- ÖVNINGAR -->
+    <div id="övningar">
+      <h2 class="sektion-rubrik">20 Grundläggande Övningar</h2>
+      <p class="sektion-underrubrik">Beskrivningar, muskelgrupper och utföringstips för de viktigaste övningarna.</p>
+
+      <div class="grid grid-2" style="gap:1rem;">
+
+        <div class="övning-card" id="knäböj">
+          <div class="övning-card__nummer">1</div>
+          <div>
+            <div class="övning-card__namn">Knäböj (Squat)</div>
+            <div class="övning-card__muskel">Quadriceps, Hamstrings, Glutes, Core</div>
+            <div class="övning-card__beskr">Stå med fötterna axelbrett isär, tårna lätt utåt. Håll ryggen rak och bröstkorgen uppe. Böj knäna och sjunk ner tills låren är parallella med golvet. Pressa upp genom hälarna. <strong>Nyckel:</strong> knän ska följa tårnas riktning.</div>
+          </div>
+        </div>
+
+        <div class="övning-card" id="marklyft">
+          <div class="övning-card__nummer">2</div>
+          <div>
+            <div class="övning-card__namn">Marklyft (Deadlift)</div>
+            <div class="övning-card__muskel">Hela ryggen, Hamstrings, Glutes, Quadriceps, Underarmar</div>
+            <div class="övning-card__beskr">Stå med fötterna höftbrett isär och stången över mitten av foten. Greppa stången, håll ryggen neutral. Pressa golvet från dig när du reser dig. Höft och axlar ska röra sig i samma hastighet från golvet. <strong>Nyckel:</strong> håll stången nära kroppen hela vägen.</div>
+          </div>
+        </div>
+
+        <div class="övning-card" id="bänkpress">
+          <div class="övning-card__nummer">3</div>
+          <div>
+            <div class="övning-card__namn">Bänkpress</div>
+            <div class="övning-card__muskel">Bröst (Pectoralis Major), Triceps, Främre Deltoid</div>
+            <div class="övning-card__beskr">Ligg på bänken med fötterna i golvet. Greppa stången lite bredare än axelbredd. Sänk stången kontrollerat till bröstet, pressa sedan upp. Skulderbladen ska vara ihopdragna och hålla kontakt med bänken. <strong>Nyckel:</strong> andas in nedåt, ut uppåt.</div>
+          </div>
+        </div>
+
+        <div class="övning-card" id="axelpress">
+          <div class="övning-card__nummer">4</div>
+          <div>
+            <div class="övning-card__namn">Axelpress / Overhead Press (OHP)</div>
+            <div class="övning-card__muskel">Deltoid (alla delar), Triceps, Övre Trapets</div>
+            <div class="övning-card__beskr">Stå med fötterna axelbrett isär. Håll stången i höjd med nyckelbenen. Press rakt upp tills armarna är raka, vicka ut huvudet lite framåt när stången passerar ansiktet. <strong>Nyckel:</strong> spänn magen och rumpa för stabil bas.</div>
+          </div>
+        </div>
+
+        <div class="övning-card">
+          <div class="övning-card__nummer">5</div>
+          <div>
+            <div class="övning-card__namn">Skivstångsrodd (Barbell Row)</div>
+            <div class="övning-card__muskel">Övre och Nedre Rygg, Biceps, Bakre Deltoid, Trapets</div>
+            <div class="övning-card__beskr">Böj framåt i höften till 45°. Håll ryggen neutral. Ro stången mot naveln med armbågarna nära kroppen. Kläm ihop skulderbladen i toppositionen. <strong>Nyckel:</strong> känn att det är ryggen som drar, inte armarna.</div>
+          </div>
+        </div>
+
+        <div class="övning-card">
+          <div class="övning-card__nummer">6</div>
+          <div>
+            <div class="övning-card__namn">Pull-ups / Chins</div>
+            <div class="övning-card__muskel">Latissimus Dorsi, Biceps, Bakre Deltoid, Core</div>
+            <div class="övning-card__beskr">Häng i ett stag med axelbrett grepp. Drag dig upp tills hakan är över staget. Sänk kontrollerat. Pull-ups = pronerat grepp (bredare rygg), Chins = supinerat (mer biceps). <strong>Nyckel:</strong> initiera rörelsen med skulderbladen, inte armarna.</div>
+          </div>
+        </div>
+
+        <div class="övning-card" id="utfall">
+          <div class="övning-card__nummer">7</div>
+          <div>
+            <div class="övning-card__namn">Utfall (Lunges)</div>
+            <div class="övning-card__muskel">Quadriceps, Hamstrings, Glutes, Vadmuskler</div>
+            <div class="övning-card__beskr">Stå upprätt, ta ett stort steg framåt. Sänk bakre knät mot golvet (utan att nå golvet). Bakre knät ca 5 cm från marken. Pressa upp med framlåret. Alternera ben. <strong>Variant:</strong> gående utfall, stationära utfall eller bakåtutfall.</div>
+          </div>
+        </div>
+
+        <div class="övning-card">
+          <div class="övning-card__nummer">8</div>
+          <div>
+            <div class="övning-card__namn">Höftlyft / Glute Bridge</div>
+            <div class="övning-card__muskel">Gluteus Maximus, Hamstrings, Nedre Rygg</div>
+            <div class="övning-card__beskr">Ligg på rygg med böjda knän och fötterna i golvet. Pressa höfterna uppåt tills kroppen bildar en rak linje från axlar till knän. Kläm ihop rumpan i toppen. Lägg en skivstång över höfterna för mer motstånd. <strong>Nyckel:</strong> aktivera rumpan, inte nedre ryggen.</div>
+          </div>
+        </div>
+
+        <div class="övning-card">
+          <div class="övning-card__nummer">9</div>
+          <div>
+            <div class="övning-card__namn">Dips</div>
+            <div class="övning-card__muskel">Triceps, Nedre Bröst, Framaxel</div>
+            <div class="övning-card__beskr">Stöd dig på parallella stänger med raka armar. Sänk kroppen genom att böja armarna tills överkroppsvinkeln är ca 90°. Pressa upp. <strong>Brösttips:</strong> luta kroppen framåt för mer bröstaktivering. <strong>Tricepstips:</strong> håll kroppen rak.</div>
+          </div>
+        </div>
+
+        <div class="övning-card">
+          <div class="övning-card__nummer">10</div>
+          <div>
+            <div class="övning-card__namn">Plankan (Plank)</div>
+            <div class="övning-card__muskel">Core (Rectus Abdominis, Obliques), Axlar, Glutes</div>
+            <div class="övning-card__beskr">Stöd på underarmar och tåspetsar. Håll kroppen som en rak planka från huvud till hälar. Spänn magen, rumpan och låren. Håll positionen i 20–60 sekunder. <strong>Nyckel:</strong> undvik att svanka eller lyfta rumpan.</div>
+          </div>
+        </div>
+
+        <div class="övning-card">
+          <div class="övning-card__nummer">11</div>
+          <div>
+            <div class="övning-card__namn">Ryggresningar (Back Extensions)</div>
+            <div class="övning-card__muskel">Erector Spinae (Nedre Rygg), Glutes, Hamstrings</div>
+            <div class="övning-card__beskr">På ett ryggresningsbänk eller GHD. Höfterna i kanten. Sänk överkroppen och lyft upp till neutral rygg (inte överbög). Håll ryggen neutral under hela rörelsen. <strong>Variant:</strong> med vikter hållna mot bröstet.</div>
+          </div>
+        </div>
+
+        <div class="övning-card">
+          <div class="övning-card__nummer">12</div>
+          <div>
+            <div class="övning-card__namn">Bicepscurl</div>
+            <div class="övning-card__muskel">Biceps Brachii, Brachialis</div>
+            <div class="övning-card__beskr">Stå upp med hantlar eller stång längs sidan. Curl upp mot axeln utan att svänga. Sänk kontrollerat. Armbågen stannar nära kroppen. <strong>Variation:</strong> hammercurl (neutralt grepp) ger mer brachialis och underarmar.</div>
+          </div>
+        </div>
+
+        <div class="övning-card">
+          <div class="övning-card__nummer">13</div>
+          <div>
+            <div class="övning-card__namn">Tåhävningar (Calf Raises)</div>
+            <div class="övning-card__muskel">Gastrocnemius, Soleus (Vadmuskler)</div>
+            <div class="övning-card__beskr">Stå på kanten av ett trappsteg. Håll i något. Sänk hälarna under trappsteget (stretch) och res sedan upp på tårna maximalt. Kontrollerad och långsam rörelse ger bäst resultat. Kör med raka eller böjda knän för att träffa olika delar av vaden.</div>
+          </div>
+        </div>
+
+        <div class="övning-card">
+          <div class="övning-card__nummer">14</div>
+          <div>
+            <div class="övning-card__namn">Rumänsk Marklyft (RDL)</div>
+            <div class="övning-card__muskel">Hamstrings, Glutes, Nedre Rygg</div>
+            <div class="övning-card__beskr">Håll stången framför låren. Böj framåt i höften med nästan raka ben (liten böj i knäet). Känn stretchen i baksidan av låren. Pressa höfterna framåt för att resa dig. <strong>Nyckel:</strong> rörelsen sker i höften, inte ryggen.</div>
+          </div>
+        </div>
+
+        <div class="övning-card">
+          <div class="övning-card__nummer">15</div>
+          <div>
+            <div class="övning-card__namn">Lat Pulldown</div>
+            <div class="övning-card__muskel">Latissimus Dorsi, Biceps, Bakre Deltoid</div>
+            <div class="övning-card__beskr">Sätt dig i maskinen. Greppa stången bredare än axelbredd. Drag ner mot nyckelben/övre bröst medan du lutar lätt bakåt. Kontrolleradsupport uppåt. Bra alternativ till pull-ups för nybörjare.</div>
+          </div>
+        </div>
+
+        <div class="övning-card">
+          <div class="övning-card__nummer">16</div>
+          <div>
+            <div class="övning-card__namn">Face Pulls</div>
+            <div class="övning-card__muskel">Bakre Deltoid, Rotator Cuff, Övre Rygg</div>
+            <div class="övning-card__beskr">Använd kabelmaskin i ansiktshöjd med rep-grepp. Drag mot ansiktet med armbågarna i axelhöjd. Avsluta med armbågarna bakom öronhöjd. Viktig axelskadeförebyggande övning. Kör 3×15 i slutet av varje pass.</div>
+          </div>
+        </div>
+
+        <div class="övning-card">
+          <div class="övning-card__nummer">17</div>
+          <div>
+            <div class="övning-card__namn">Benpress (Leg Press)</div>
+            <div class="övning-card__muskel">Quadriceps, Hamstrings, Glutes</div>
+            <div class="övning-card__beskr">Sätt dig i maskinen med fötterna höftbrett isär. Sänk plattan tills knäna är 90°. Pressa upp utan att låsa ut knäna. Fötter högt upp = mer glutes/hamstrings. Fötter lågt = mer quads. <strong>Varning:</strong> låskna aldrig ut knäna.</div>
+          </div>
+        </div>
+
+        <div class="övning-card">
+          <div class="övning-card__nummer">18</div>
+          <div>
+            <div class="övning-card__namn">Kettlebell Swing</div>
+            <div class="övning-card__muskel">Glutes, Hamstrings, Core, Nedre Rygg, Axlar</div>
+            <div class="övning-card__beskr">Stå med fötterna axelbrett isär. Böj framåt i höften och svinga kettlebellen bakåt. Snäpp höfterna framåt explosivt för att svinga upp till axelhöjd. Rörelsen drivs av höfterna – inte armarna. Utmärkt för explosive kraft och kondition.</div>
+          </div>
+        </div>
+
+        <div class="övning-card">
+          <div class="övning-card__nummer">19</div>
+          <div>
+            <div class="övning-card__namn">Lateral Raises (Sidolyft)</div>
+            <div class="övning-card__muskel">Medial Deltoid (Yttre Axelkula)</div>
+            <div class="övning-card__beskr">Håll hantlarna längs sidan. Lyft ut till sidan till axelhöjd med lätt böjda armar. Sänk kontrollerat. Tummen ska peka lätt nedåt i toppen. <strong>Nyckel:</strong> använd lätt vikt och fokusera på muskelkontakt, inte momentum.</div>
+          </div>
+        </div>
+
+        <div class="övning-card">
+          <div class="övning-card__nummer">20</div>
+          <div>
+            <div class="övning-card__namn">Goblet Squat</div>
+            <div class="övning-card__muskel">Quadriceps, Glutes, Core, Övre Rygg</div>
+            <div class="övning-card__beskr">Håll en hantel eller kettlebell mot bröstet. Stå med fötterna lite bredare än axelbrett, tårna utåt. Sjunk djupt ner i squat – den djupa positionen gör denna perfekt för rörlighetsarbete. Utmärkt för nybörjare att lära sig squattekniken.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- TEKNIK -->
+    <div id="teknik">
+      <h2 class="sektion-rubrik">Teknik & Viktiga Principer</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <div class="card__body">
+            <h3>🔄 Progressiv Överlastning</h3>
+            <p>Det viktigaste principen i styrketräning. Du måste ständigt ge kroppen ny utmaning – annars stannar utvecklingen. Lägg till vikt, fler reps, fler set eller kortare vila gradvis varje vecka.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__body">
+            <h3>⏱ Vilotider</h3>
+            <p><strong>Styrka (1–5 reps):</strong> 3–5 minuters vila. <strong>Hypertrofi (6–12 reps):</strong> 2–3 minuters vila. <strong>Uthållighet (12+ reps):</strong> 60–90 sekunder. Kortare vila = mer metabol stress, men sämre styrkeuttag.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__body">
+            <h3>📈 Rep-zoner</h3>
+            <ul class="checklista">
+              <li><strong>1–5 reps:</strong> Maximal styrka, CNS-adaption</li>
+              <li><strong>6–12 reps:</strong> Optimal muskelbygge (hypertrofi)</li>
+              <li><strong>12–20 reps:</strong> Muskeluthållighet, metabol stress</li>
+              <li>Bäst resultat med variation av alla zoner</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__body">
+            <h3>🌡 Uppvärmning</h3>
+            <ul class="checklista">
+              <li>5–10 min lättare kondition</li>
+              <li>Dynamisk stretching av berörda muskler</li>
+              <li>Uppvärmningsset: 50% av arbetsset, 10 reps</li>
+              <li>70% av arbetsset, 5 reps</li>
+              <li>Sedan arbetsset med full vikt</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- NYBÖRJARE -->
+    <div id="nybörjare">
+      <h2 class="sektion-rubrik">Nybörjarguide – Kom igång med Styrketräning</h2>
+      <div class="steg-lista">
+        <div class="steg"><div class="steg__num">1</div><div class="steg__text"><h4>Välj rätt program</h4><p>Som nybörjare: börja med 3-dagars helkroppsprogrammet. Det ger rätt frekvens utan att bli för mycket.</p></div></div>
+        <div class="steg"><div class="steg__num">2</div><div class="steg__text"><h4>Lär dig tekniken med lätt vikt</h4><p>De första 2–4 veckorna: kör med stång eller lätta hantlar tills tekniken sitter. Teknik är grunden – alltid.</p></div></div>
+        <div class="steg"><div class="steg__num">3</div><div class="steg__text"><h4>Logga dina träningspass</h4><p>Anteckna övning, vikt, set och reps varje pass. Det gör det enkelt att lägga till vikt och se framsteg.</p></div></div>
+        <div class="steg"><div class="steg__num">4</div><div class="steg__text"><h4>Ät tillräckligt med protein</h4><p>Minst 1,6 g protein per kg kroppsvikt. En 80 kg person behöver minst 128 g protein per dag för muskelbygge.</p></div></div>
+        <div class="steg"><div class="steg__num">5</div><div class="steg__text"><h4>Sov tillräckligt</h4><p>Muskler byggs under sömnen, inte under träningen. 7–9 timmars sömn per natt är en del av träningsprogrammet.</p></div></div>
+        <div class="steg"><div class="steg__num">6</div><div class="steg__text"><h4>Var konsekvent – inte perfekt</h4><p>3 medelmåttiga pass per vecka i ett år slår 1 perfekt pass med månaders uppehåll. Konsistens är allt.</p></div></div>
+      </div>
+
+      <div class="info-box info-box--varning" style="margin-top:2rem;">
+        <div class="info-box__rubrik">⚠️ Undvik dessa vanliga nybörjarmisstag</div>
+        <p>Börja INTE med för tung vikt. Skippa INTE uppvärmning. Träna INTE samma muskelgrupp varje dag. Och viktigast: sluta ALDRIG om du känner skarp smärta – det är skillnad på muskelömhet och skada.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- RELATERADE SIDOR -->
+<section class="sektion sektion--ljus">
+  <div class="container">
+    <h2 class="sektion-rubrik">Relaterat innehåll</h2>
+    <div class="grid grid-4">
+      <a href="../aldersgrupper/unga-vuxna.html" class="kat-card"><div class="kat-card__ikon kat-card__ikon--grön">🏋️</div><h3>Unga Vuxna (18–30)</h3><p>Program och kostplaner för unga vuxna.</p><div class="kat-card__pil">Läs →</div></a>
+      <a href="../aldersgrupper/vuxna.html" class="kat-card"><div class="kat-card__ikon kat-card__ikon--blå">👨‍👩‍👧</div><h3>Vuxna (31–50)</h3><p>Balanserade program för folk mitt i livet.</p><div class="kat-card__pil">Läs →</div></a>
+      <a href="../kost/makrorakning.html" class="kat-card"><div class="kat-card__ikon kat-card__ikon--orange">📊</div><h3>Makroräkning</h3><p>Ät rätt för att stödja din styrketräning.</p><div class="kat-card__pil">Läs →</div></a>
+      <a href="../aterhämtning.html" class="kat-card"><div class="kat-card__ikon kat-card__ikon--lila">😴</div><h3>Återhämtning</h3><p>Sömn och vila är en del av programmet.</p><div class="kat-card__pil">Läs →</div></a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div><div class="footer__brand">🌿 Hälsokällan</div><p class="footer__tagline">Sveriges kompletta gratis hälsoresurs.</p></div>
+      <div><div class="footer__rubrik">Träning</div><a href="styrketraning.html" class="footer__länk">Styrketräning</a><a href="konditionstraning.html" class="footer__länk">Konditionsträning</a><a href="rorlighet.html" class="footer__länk">Rörlighet</a><a href="hemmatraning.html" class="footer__länk">Hemmaträning</a></div>
+      <div><div class="footer__rubrik">Kost</div><a href="../kost/kostprogram.html" class="footer__länk">Kostprogram</a><a href="../kost/makrorakning.html" class="footer__länk">Makroräkning</a><a href="../kost/kosttillskott.html" class="footer__länk">Kosttillskott</a></div>
+      <div><div class="footer__rubrik">Åldersgrupper</div><a href="../aldersgrupper/barn.html" class="footer__länk">Barn</a><a href="../aldersgrupper/unga-vuxna.html" class="footer__länk">Unga Vuxna</a><a href="../aldersgrupper/seniorer.html" class="footer__länk">Seniorer</a></div>
+    </div>
+    <div class="footer__bottom"><span>© 2025 Hälsokällan</span></div>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

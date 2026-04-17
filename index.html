@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hälsokällan – Sveriges kompletta tränings- och kostresurs</title>
+  <meta name="description" content="Hälsokällan är Sveriges bästa gratis källa för träning och kost. Program, övningar, kostplaner och råd anpassade för alla åldrar – allt på svenska.">
+  <meta name="keywords" content="träning, kost, hälsa, styrketräning, konditionsträning, kostprogram, övningar, program, Sverige">
+  <meta property="og:title" content="Hälsokällan – Sveriges kompletta tränings- och kostresurs">
+  <meta property="og:description" content="Gratis tränings- och kostguider för alla åldrar. Program, övningar, kostplaner och råd på svenska.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://halsokällan.se/">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="navbar" role="navigation" aria-label="Huvudnavigation">
+  <div class="container">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <div class="navbar__logo-icon">🌿</div>
+        Hälsokällan
+      </a>
+      <div class="navbar__nav">
+        <a href="index.html" class="navbar__nav-link aktiv">Hem</a>
+
+        <div class="dropdown">
+          <a href="traning/index.html" class="navbar__nav-link">Träning <span class="dropdown__arrow">▾</span></a>
+          <div class="dropdown__menu">
+            <a href="traning/styrketraning.html" class="dropdown__item">💪 Styrketräning</a>
+            <a href="traning/konditionstraning.html" class="dropdown__item">🏃 Konditionsträning</a>
+            <a href="traning/rorlighet.html" class="dropdown__item">🧘 Rörlighet & Stretching</a>
+            <a href="traning/hemmatraning.html" class="dropdown__item">🏠 Hemmaträning</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="kost/index.html" class="navbar__nav-link">Kost <span class="dropdown__arrow">▾</span></a>
+          <div class="dropdown__menu">
+            <a href="kost/kostprogram.html" class="dropdown__item">🥗 Kostprogram & Dieter</a>
+            <a href="kost/makrorakning.html" class="dropdown__item">📊 Makroräkning</a>
+            <a href="kost/maltidsplanering.html" class="dropdown__item">📅 Måltidsplanering</a>
+            <a href="kost/livsmedelsguider.html" class="dropdown__item">🛒 Livsmedelsguide</a>
+            <a href="kost/kosttillskott.html" class="dropdown__item">💊 Kosttillskott</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="aldersgrupper/index.html" class="navbar__nav-link">Åldersgrupper <span class="dropdown__arrow">▾</span></a>
+          <div class="dropdown__menu">
+            <a href="aldersgrupper/barn.html" class="dropdown__item">🧒 Barn & Ungdomar (6–17)</a>
+            <a href="aldersgrupper/unga-vuxna.html" class="dropdown__item">🏋️ Unga Vuxna (18–30)</a>
+            <a href="aldersgrupper/vuxna.html" class="dropdown__item">👨‍👩‍👧 Vuxna (31–50)</a>
+            <a href="aldersgrupper/medelalder.html" class="dropdown__item">🧓 Medelålders (51–65)</a>
+            <a href="aldersgrupper/seniorer.html" class="dropdown__item">👴 Seniorer (65+)</a>
+          </div>
+        </div>
+
+        <a href="aterhämtning.html" class="navbar__nav-link">Återhämtning</a>
+        <a href="sok.html" class="navbar__search-btn" title="Sök" aria-label="Sök">🔍</a>
+      </div>
+      <button class="navbar__hamburger" aria-label="Öppna meny" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="navbar__mobile-menu">
+    <div class="mobile-nav-group">
+      <div class="mobile-nav-label">Träning</div>
+      <a href="traning/styrketraning.html" class="mobile-nav-link">💪 Styrketräning</a>
+      <a href="traning/konditionstraning.html" class="mobile-nav-link">🏃 Konditionsträning</a>
+      <a href="traning/rorlighet.html" class="mobile-nav-link">🧘 Rörlighet</a>
+      <a href="traning/hemmatraning.html" class="mobile-nav-link">🏠 Hemmaträning</a>
+    </div>
+    <div class="mobile-nav-group">
+      <div class="mobile-nav-label">Kost</div>
+      <a href="kost/kostprogram.html" class="mobile-nav-link">🥗 Kostprogram</a>
+      <a href="kost/makrorakning.html" class="mobile-nav-link">📊 Makroräkning</a>
+      <a href="kost/maltidsplanering.html" class="mobile-nav-link">📅 Måltidsplanering</a>
+      <a href="kost/kosttillskott.html" class="mobile-nav-link">💊 Kosttillskott</a>
+    </div>
+    <div class="mobile-nav-group">
+      <div class="mobile-nav-label">Åldersgrupper</div>
+      <a href="aldersgrupper/barn.html" class="mobile-nav-link">🧒 Barn & Ungdomar (6–17)</a>
+      <a href="aldersgrupper/unga-vuxna.html" class="mobile-nav-link">🏋️ Unga Vuxna (18–30)</a>
+      <a href="aldersgrupper/vuxna.html" class="mobile-nav-link">👨‍👩‍👧 Vuxna (31–50)</a>
+      <a href="aldersgrupper/medelalder.html" class="mobile-nav-link">🧓 Medelålders (51–65)</a>
+      <a href="aldersgrupper/seniorer.html" class="mobile-nav-link">👴 Seniorer (65+)</a>
+    </div>
+    <div class="mobile-nav-group">
+      <a href="aterhämtning.html" class="mobile-nav-link">😴 Återhämtning</a>
+      <a href="skadeforebyggande.html" class="mobile-nav-link">🩹 Skadeförebyggande</a>
+      <a href="mental-traning.html" class="mobile-nav-link">🧠 Mental Träning</a>
+      <a href="sok.html" class="mobile-nav-link">🔍 Sök</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero__inner">
+      <div class="hero__badge">🌿 Sveriges kompletta hälsoresurs</div>
+      <h1>Din gratis källa för träning och kost – på svenska</h1>
+      <p>Evidensbaserade program, kostplaner och råd anpassade för din ålder och dina mål. Allt gratis, allt på svenska.</p>
+      <div class="hero__stats">
+        <div>
+          <div class="hero__stat-num">25+</div>
+          <div class="hero__stat-label">Träningsprogram</div>
+        </div>
+        <div>
+          <div class="hero__stat-num">20</div>
+          <div class="hero__stat-label">Övningsbeskrivningar</div>
+        </div>
+        <div>
+          <div class="hero__stat-num">5</div>
+          <div class="hero__stat-label">Åldersgrupper</div>
+        </div>
+        <div>
+          <div class="hero__stat-num">100%</div>
+          <div class="hero__stat-label">Gratis</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMVÄLJAREN + KALKYLATOR -->
+<section class="pv-sektion">
+  <div class="container">
+    <div class="pv-duo-grid">
+    <div class="pv-widget">
+
+      <div class="pv-rubrik">
+        <div class="pv-rubrik__ikon">🎯</div>
+        <div>
+          <h2 class="pv-rubrik__titel">Hitta ditt perfekta program</h2>
+          <p class="pv-rubrik__text">Svara på 3 enkla frågor – vi matchar rätt träning och kost för just dig</p>
+        </div>
+      </div>
+
+      <!-- Stegindikator -->
+      <div class="pv-steg-ind" id="pv-steg-ind">
+        <div class="pv-steg-ind__punkt aktiv" data-steg="1"><span>1</span></div>
+        <div class="pv-steg-ind__linje"></div>
+        <div class="pv-steg-ind__punkt" data-steg="2"><span>2</span></div>
+        <div class="pv-steg-ind__linje"></div>
+        <div class="pv-steg-ind__punkt" data-steg="3"><span>3</span></div>
+      </div>
+
+      <!-- Steg 1: Om dig -->
+      <div class="pv-steg" id="pv-steg-1">
+        <h3 class="pv-steg__titel">Om dig</h3>
+        <div class="pv-fält-grid">
+          <div class="pv-fält">
+            <label for="pv-ålder">Ålder</label>
+            <input type="number" id="pv-ålder" min="6" max="99" placeholder="t.ex. 32">
+          </div>
+          <div class="pv-fält">
+            <label for="pv-kön">Kön</label>
+            <select id="pv-kön">
+              <option value="">Välj...</option>
+              <option value="man">Man</option>
+              <option value="kvinna">Kvinna</option>
+            </select>
+          </div>
+          <div class="pv-fält">
+            <label for="pv-vikt">Vikt (kg)</label>
+            <input type="number" id="pv-vikt" min="30" max="250" placeholder="t.ex. 75">
+          </div>
+          <div class="pv-fält">
+            <label for="pv-längd">Längd (cm)</label>
+            <input type="number" id="pv-längd" min="100" max="250" placeholder="t.ex. 175">
+          </div>
+        </div>
+        <p class="pv-fel" id="pv-fel-1"></p>
+        <button class="btn btn-primär pv-nästa" data-nästa="2">Nästa →</button>
+      </div>
+
+      <!-- Steg 2: Träningsval -->
+      <div class="pv-steg pv-steg--dold" id="pv-steg-2">
+        <h3 class="pv-steg__titel">Träningsval</h3>
+        <div class="pv-fält">
+          <label>Vilken typ av träning föredrar du?</label>
+          <div class="pv-välj-rad">
+            <button class="pv-välj" data-grupp="typ" data-val="styrka">💪 Styrketräning</button>
+            <button class="pv-välj" data-grupp="typ" data-val="kondition">🏃 Kondition & Löpning</button>
+            <button class="pv-välj" data-grupp="typ" data-val="hemma">🏠 Hemmaträning</button>
+            <button class="pv-välj" data-grupp="typ" data-val="rörlighet">🧘 Rörlighet</button>
+            <button class="pv-välj" data-grupp="typ" data-val="allround">⚡ Allround / Vet ej</button>
+          </div>
+        </div>
+        <div class="pv-fält">
+          <label>Hur ofta vill du träna per vecka?</label>
+          <div class="pv-välj-rad">
+            <button class="pv-välj" data-grupp="frekvens" data-val="2">2 dagar</button>
+            <button class="pv-välj" data-grupp="frekvens" data-val="3">3 dagar</button>
+            <button class="pv-välj" data-grupp="frekvens" data-val="4">4 dagar</button>
+            <button class="pv-välj" data-grupp="frekvens" data-val="5">5–6 dagar</button>
+          </div>
+        </div>
+        <div class="pv-fält">
+          <label>Vad är ditt huvudmål?</label>
+          <div class="pv-välj-rad">
+            <button class="pv-välj" data-grupp="mål" data-val="viktnedgång">⚖️ Gå ner i vikt</button>
+            <button class="pv-välj" data-grupp="mål" data-val="muskler">💪 Bygga muskler</button>
+            <button class="pv-välj" data-grupp="mål" data-val="kondition">🫀 Bättre kondition</button>
+            <button class="pv-välj" data-grupp="mål" data-val="hälsa">🌿 Allmän hälsa</button>
+          </div>
+        </div>
+        <p class="pv-fel" id="pv-fel-2"></p>
+        <div class="pv-knappar">
+          <button class="btn btn-sekundär pv-tillbaka" data-tillbaka="1">← Tillbaka</button>
+          <button class="btn btn-primär pv-nästa" data-nästa="3">Nästa →</button>
+        </div>
+      </div>
+
+      <!-- Steg 3: Erfarenhet -->
+      <div class="pv-steg pv-steg--dold" id="pv-steg-3">
+        <h3 class="pv-steg__titel">Din erfarenhetsnivå</h3>
+        <div class="pv-fält">
+          <label>Hur länge har du tränat regelbundet?</label>
+          <div class="pv-välj-rad pv-välj-rad--vertikal">
+            <button class="pv-välj pv-välj--stor" data-grupp="erfarenhet" data-val="nybörjare">
+              <strong>🌱 Nybörjare</strong>
+              <span>0–1 år, eller ny på träning</span>
+            </button>
+            <button class="pv-välj pv-välj--stor" data-grupp="erfarenhet" data-val="mellannivå">
+              <strong>🔥 Mellannivå</strong>
+              <span>1–3 år, tränar relativt regelbundet</span>
+            </button>
+            <button class="pv-välj pv-välj--stor" data-grupp="erfarenhet" data-val="avancerad">
+              <strong>⭐ Avancerad</strong>
+              <span>3+ år, tränar systematiskt</span>
+            </button>
+          </div>
+        </div>
+        <p class="pv-fel" id="pv-fel-3"></p>
+        <div class="pv-knappar">
+          <button class="btn btn-sekundär pv-tillbaka" data-tillbaka="2">← Tillbaka</button>
+          <button class="btn btn-primär" id="pv-beräkna">Visa mitt program 🎯</button>
+        </div>
+      </div>
+
+      <!-- Resultat -->
+      <div class="pv-steg pv-steg--dold" id="pv-resultat">
+        <!-- fylls av JavaScript -->
+      </div>
+
+    </div>
+
+    <!-- KALORIKALKYLATOR -->
+    <div class="pv-widget pv-widget--kost">
+      <div class="pv-rubrik">
+        <div class="pv-rubrik__ikon">⚡</div>
+        <div>
+          <h2 class="pv-rubrik__titel">Kalorikalkylator</h2>
+          <p class="pv-rubrik__text">Räkna ut ditt dagliga kaloribehov och makrofördelning</p>
+        </div>
+      </div>
+
+      <form id="makro-form">
+        <div class="pv-fält-grid">
+          <div class="pv-fält">
+            <label for="mkr-vikt">Vikt (kg)</label>
+            <input type="number" id="mkr-vikt" min="30" max="250" placeholder="t.ex. 75">
+          </div>
+          <div class="pv-fält">
+            <label for="mkr-längd">Längd (cm)</label>
+            <input type="number" id="mkr-längd" min="100" max="250" placeholder="t.ex. 175">
+          </div>
+          <div class="pv-fält">
+            <label for="mkr-ålder">Ålder</label>
+            <input type="number" id="mkr-ålder" min="10" max="99" placeholder="t.ex. 30">
+          </div>
+          <div class="pv-fält">
+            <label for="mkr-kön">Kön</label>
+            <select id="mkr-kön">
+              <option value="man">Man</option>
+              <option value="kvinna">Kvinna</option>
+            </select>
+          </div>
+        </div>
+        <div class="pv-fält">
+          <label for="mkr-aktivitet">Aktivitetsnivå</label>
+          <select id="mkr-aktivitet">
+            <option value="1.2">Stillasittande (inget gym)</option>
+            <option value="1.375">Lätt aktiv (1–2 dagar/vecka)</option>
+            <option value="1.55" selected>Måttligt aktiv (3–4 dagar/vecka)</option>
+            <option value="1.65">Aktiv (5 dagar/vecka)</option>
+            <option value="1.725">Mycket aktiv (6–7 dagar/vecka)</option>
+          </select>
+        </div>
+        <div class="pv-fält">
+          <label for="mkr-mål">Mål</label>
+          <select id="mkr-mål">
+            <option value="behåll">Behåll vikten</option>
+            <option value="minska">Gå ner i vikt</option>
+            <option value="öka">Bygga muskler</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primär" style="width:100%;margin-top:.5rem;">Beräkna →</button>
+      </form>
+
+      <div id="makro-resultat" class="mkr-resultat">
+        <div class="mkr-resultat__grid">
+          <div class="mkr-chip mkr-chip--kal">
+            <div class="mkr-chip__label">Kalorier</div>
+            <div class="mkr-chip__val" id="mkr-res-kal">–</div>
+          </div>
+          <div class="mkr-chip mkr-chip--prot">
+            <div class="mkr-chip__label">Protein</div>
+            <div class="mkr-chip__val" id="mkr-res-prot">–</div>
+          </div>
+          <div class="mkr-chip mkr-chip--kol">
+            <div class="mkr-chip__label">Kolhydrater</div>
+            <div class="mkr-chip__val" id="mkr-res-kol">–</div>
+          </div>
+          <div class="mkr-chip mkr-chip--fett">
+            <div class="mkr-chip__label">Fett</div>
+            <div class="mkr-chip__val" id="mkr-res-fett">–</div>
+          </div>
+        </div>
+        <a href="kost/makrorakning.html" class="pv-resultat-länk" style="margin-top:.75rem;display:inline-flex;">Fullständig makroguide →</a>
+      </div>
+    </div>
+
+    </div><!-- /pv-duo-grid -->
+  </div>
+</section>
+
+<!-- HITTA PROGRAM-LÄNK -->
+<section class="sektion" style="padding: 1.5rem 0; text-align: center;">
+  <div class="container">
+    <a href="aldersgrupper/index.html" class="btn btn-primär">Hitta program →</a>
+  </div>
+</section>
+
+<!-- TRÄNING KATEGORIER -->
+<section class="sektion sektion--ljus">
+  <div class="container">
+    <div class="sektion-topptext">
+      <h2 class="sektion-rubrik">💪 Träning</h2>
+      <p class="sektion-underrubrik">Evidensbaserade program och guider för alla träningsformer och nivåer.</p>
+    </div>
+    <div class="grid grid-auto">
+      <a href="traning/styrketraning.html" class="kat-card">
+        <div class="kat-card__ikon kat-card__ikon--grön">💪</div>
+        <h3>Styrketräning</h3>
+        <p>Program, övningar och teknikguider för nybörjare till avancerade.</p>
+        <div class="kat-card__pil">Utforska →</div>
+      </a>
+      <a href="traning/konditionstraning.html" class="kat-card">
+        <div class="kat-card__ikon kat-card__ikon--blå">🏃</div>
+        <h3>Konditionsträning</h3>
+        <p>Löpning, cykling, simning och HIIT. Program för alla nivåer.</p>
+        <div class="kat-card__pil">Utforska →</div>
+      </a>
+      <a href="traning/rorlighet.html" class="kat-card">
+        <div class="kat-card__ikon kat-card__ikon--lila">🧘</div>
+        <h3>Rörlighet & Stretching</h3>
+        <p>Stretching, mobilitet och yoga-inspirerade rörelser för bättre rörelseförmåga.</p>
+        <div class="kat-card__pil">Utforska →</div>
+      </a>
+      <a href="traning/hemmatraning.html" class="kat-card">
+        <div class="kat-card__ikon kat-card__ikon--orange">🏠</div>
+        <h3>Hemmaträning</h3>
+        <p>Effektiv träning hemma utan utrustning. Kroppsvikt och calisthenics.</p>
+        <div class="kat-card__pil">Utforska →</div>
+      </a>
+      <a href="aterhämtning.html" class="kat-card">
+        <div class="kat-card__ikon kat-card__ikon--gul">😴</div>
+        <h3>Återhämtning & Sömn</h3>
+        <p>Varför vila är lika viktigt som träning. Praktiska tips för bättre återhämtning.</p>
+        <div class="kat-card__pil">Utforska →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- KOST KATEGORIER -->
+<section class="sektion">
+  <div class="container">
+    <div class="sektion-topptext">
+      <h2 class="sektion-rubrik">🥗 Kost & Näring</h2>
+      <p class="sektion-underrubrik">Kostprogram, makroräkning och måltidsplanering för dina mål.</p>
+    </div>
+    <div class="grid grid-auto">
+      <a href="kost/kostprogram.html" class="kat-card">
+        <div class="kat-card__ikon kat-card__ikon--grön">🥗</div>
+        <h3>Kostprogram & Dieter</h3>
+        <p>LCHF, intermittent fasta, vegetarisk och vegansk kost – grundlig genomgång.</p>
+        <div class="kat-card__pil">Läs mer →</div>
+      </a>
+      <a href="kost/makrorakning.html" class="kat-card">
+        <div class="kat-card__ikon kat-card__ikon--blå">📊</div>
+        <h3>Makroräkning & Kalorier</h3>
+        <p>Räkna makron och kalorier rätt. Kalkylator ingår.</p>
+        <div class="kat-card__pil">Läs mer →</div>
+      </a>
+      <a href="kost/maltidsplanering.html" class="kat-card">
+        <div class="kat-card__ikon kat-card__ikon--orange">📅</div>
+        <h3>Måltidsplanering</h3>
+        <p>Veckoplaneringar och meal prep – spara tid och pengar.</p>
+        <div class="kat-card__pil">Läs mer →</div>
+      </a>
+      <a href="kost/livsmedelsguider.html" class="kat-card">
+        <div class="kat-card__ikon kat-card__ikon--grön">🛒</div>
+        <h3>Livsmedelsguide</h3>
+        <p>De bästa livsmedlen för träning, hälsa och specifika mål.</p>
+        <div class="kat-card__pil">Läs mer →</div>
+      </a>
+      <a href="kost/kosttillskott.html" class="kat-card">
+        <div class="kat-card__ikon kat-card__ikon--lila">💊</div>
+        <h3>Kosttillskott</h3>
+        <p>Vad fungerar och vad är hype? Ärlig genomgång av kreatin, protein och mer.</p>
+        <div class="kat-card__pil">Läs mer →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ÅLDERSGRUPPER -->
+<section class="sektion sektion--grön">
+  <div class="container">
+    <div class="sektion-topptext text-center">
+      <h2 class="sektion-rubrik">👤 Anpassat för din ålder</h2>
+      <p class="sektion-underrubrik" style="margin:0 auto 2.5rem;">Kroppen förändras – ditt program bör göra det också. Hitta råd och program speciellt anpassade för dig.</p>
+    </div>
+    <div class="grid grid-auto-sm">
+
+      <a href="aldersgrupper/barn.html" class="kat-card">
+        <div style="font-size:2.5rem;margin-bottom:.75rem;">🧒</div>
+        <h3>Barn & Ungdomar</h3>
+        <p style="font-size:.85rem;color:var(--grå-500);">6–17 år</p>
+        <p>Rörelse, sport och hälsosamma vanor för unga. Fokus på glädje och långsiktig hälsa.</p>
+        <div class="kat-card__pil">Se program →</div>
+      </a>
+
+      <a href="aldersgrupper/unga-vuxna.html" class="kat-card">
+        <div style="font-size:2.5rem;margin-bottom:.75rem;">🏋️</div>
+        <h3>Unga Vuxna</h3>
+        <p style="font-size:.85rem;color:var(--grå-500);">18–30 år</p>
+        <p>Maximera prestation och kroppssammansättning. Din kropp är på topp – utnyttja det.</p>
+        <div class="kat-card__pil">Se program →</div>
+      </a>
+
+      <a href="aldersgrupper/vuxna.html" class="kat-card">
+        <div style="font-size:2.5rem;margin-bottom:.75rem;">👨‍👩‍👧</div>
+        <h3>Vuxna</h3>
+        <p style="font-size:.85rem;color:var(--grå-500);">31–50 år</p>
+        <p>Balansera träning med familj och karriär. Smarta program som ger resultat på kort tid.</p>
+        <div class="kat-card__pil">Se program →</div>
+      </a>
+
+      <a href="aldersgrupper/medelalder.html" class="kat-card">
+        <div style="font-size:2.5rem;margin-bottom:.75rem;">🧓</div>
+        <h3>Medelålders</h3>
+        <p style="font-size:.85rem;color:var(--grå-500);">51–65 år</p>
+        <p>Bibehåll styrka, muskelmassa och rörlighet. Ledvänlig träning med bevisad effekt.</p>
+        <div class="kat-card__pil">Se program →</div>
+      </a>
+
+      <a href="aldersgrupper/seniorer.html" class="kat-card">
+        <div style="font-size:2.5rem;margin-bottom:.75rem;">👴</div>
+        <h3>Seniorer</h3>
+        <p style="font-size:.85rem;color:var(--grå-500);">65+ år</p>
+        <p>Säker träning för bättre balans, styrka och livskvalitet. Fallprevention och rörlighet.</p>
+        <div class="kat-card__pil">Se program →</div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXTRA SEKTIONER -->
+<section class="sektion">
+  <div class="container">
+    <div class="grid grid-3">
+      <a href="aterhämtning.html" class="kat-card">
+        <div class="kat-card__ikon kat-card__ikon--blå">😴</div>
+        <h3>Återhämtning & Sömn</h3>
+        <p>Sömn, aktiv återhämtning och stresshantering för bättre träningsresultat.</p>
+        <div class="kat-card__pil">Läs mer →</div>
+      </a>
+      <a href="skadeforebyggande.html" class="kat-card">
+        <div class="kat-card__ikon kat-card__ikon--orange">🩹</div>
+        <h3>Skadeförebyggande</h3>
+        <p>Undvik vanliga träningsskador med rätt teknik, uppvärmning och kloka val.</p>
+        <div class="kat-card__pil">Läs mer →</div>
+      </a>
+      <a href="mental-traning.html" class="kat-card">
+        <div class="kat-card__ikon kat-card__ikon--lila">🧠</div>
+        <h3>Mental Träning</h3>
+        <p>Bygg motivation, mindset och mental styrka. Träna hjärnan lika hårt som kroppen.</p>
+        <div class="kat-card__pil">Läs mer →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- INFO BOX -->
+<section class="sektion sektion--ljus">
+  <div class="container container-sm">
+    <div class="card">
+      <div class="card__body text-center">
+        <div style="font-size:2rem;margin-bottom:.75rem;">⚠️</div>
+        <h3>Medicinsk ansvarsfriskrivning</h3>
+        <p style="color:var(--grå-500);margin-top:.5rem;">Hälsokällan erbjuder allmän hälso- och träningsinformation. Råden ersätter inte medicinsk rådgivning från läkare eller legitimerad sjukvårdspersonal. Rådfråga alltid din läkare innan du påbörjar ett nytt tränings- eller kostprogram, särskilt om du har befintliga hälsotillstånd.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand">🌿 Hälsokällan</div>
+        <p class="footer__tagline">Sveriges mest kompletta gratis källa för träning och kost – allt på svenska, allt på ett ställe.</p>
+        <p class="footer__disclaimer">Informationen på denna sajt är avsedd för allmän rådgivning och ersätter inte professionell medicinsk eller nutritionsrådgivning.</p>
+      </div>
+      <div>
+        <div class="footer__rubrik">Träning</div>
+        <a href="traning/styrketraning.html" class="footer__länk">Styrketräning</a>
+        <a href="traning/konditionstraning.html" class="footer__länk">Konditionsträning</a>
+        <a href="traning/rorlighet.html" class="footer__länk">Rörlighet</a>
+        <a href="traning/hemmatraning.html" class="footer__länk">Hemmaträning</a>
+        <a href="traning/kampsport.html" class="footer__länk">Kampsport</a>
+      </div>
+      <div>
+        <div class="footer__rubrik">Kost</div>
+        <a href="kost/kostprogram.html" class="footer__länk">Kostprogram</a>
+        <a href="kost/makrorakning.html" class="footer__länk">Makroräkning</a>
+        <a href="kost/maltidsplanering.html" class="footer__länk">Måltidsplanering</a>
+        <a href="kost/livsmedelsguider.html" class="footer__länk">Livsmedelsguide</a>
+        <a href="kost/kosttillskott.html" class="footer__länk">Kosttillskott</a>
+      </div>
+      <div>
+        <div class="footer__rubrik">Åldersgrupper</div>
+        <a href="aldersgrupper/barn.html" class="footer__länk">Barn & Ungdomar</a>
+        <a href="aldersgrupper/unga-vuxna.html" class="footer__länk">Unga Vuxna (18–30)</a>
+        <a href="aldersgrupper/vuxna.html" class="footer__länk">Vuxna (31–50)</a>
+        <a href="aldersgrupper/medelalder.html" class="footer__länk">Medelålders (51–65)</a>
+        <a href="aldersgrupper/seniorer.html" class="footer__länk">Seniorer (65+)</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2025 Hälsokällan. All information är fri att använda.</span>
+      <span>Byggd med ❤️ för din hälsa</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

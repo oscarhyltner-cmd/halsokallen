@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Makroräkning & Kalorier – Komplett Guide | Hälsokällan</title>
+  <meta name="description" content="Lär dig räkna makronäringsämnen och kalorier. Kalkylator för protein, kolhydrater och fett. BMR och TDEE beräkning.">
+  <meta name="keywords" content="makroräkning, kalorier, protein, kolhydrater, fett, TDEE, BMR, energibehov, makron">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+</head>
+<body>
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar__inner">
+      <a href="../index.html" class="navbar__logo"><div class="navbar__logo-icon">🌿</div>Hälsokällan</a>
+      <div class="navbar__nav">
+        <a href="../index.html" class="navbar__nav-link">Hem</a>
+        <div class="dropdown"><a href="../traning/index.html" class="navbar__nav-link">Träning <span class="dropdown__arrow">▾</span></a><div class="dropdown__menu"><a href="../traning/styrketraning.html" class="dropdown__item">💪 Styrketräning</a><a href="../traning/konditionstraning.html" class="dropdown__item">🏃 Konditionsträning</a></div></div>
+        <div class="dropdown"><a href="index.html" class="navbar__nav-link aktiv">Kost <span class="dropdown__arrow">▾</span></a><div class="dropdown__menu"><a href="kostprogram.html" class="dropdown__item">🥗 Kostprogram</a><a href="makrorakning.html" class="dropdown__item">📊 Makroräkning</a><a href="maltidsplanering.html" class="dropdown__item">📅 Måltidsplanering</a><a href="livsmedelsguider.html" class="dropdown__item">🛒 Livsmedelsguide</a><a href="kosttillskott.html" class="dropdown__item">💊 Kosttillskott</a></div></div>
+        <div class="dropdown"><a href="../aldersgrupper/index.html" class="navbar__nav-link">Åldersgrupper <span class="dropdown__arrow">▾</span></a><div class="dropdown__menu"><a href="../aldersgrupper/barn.html" class="dropdown__item">🧒 Barn</a><a href="../aldersgrupper/unga-vuxna.html" class="dropdown__item">🏋️ Unga Vuxna</a><a href="../aldersgrupper/vuxna.html" class="dropdown__item">👨‍👩‍👧 Vuxna</a><a href="../aldersgrupper/medelalder.html" class="dropdown__item">🧓 Medelålders</a><a href="../aldersgrupper/seniorer.html" class="dropdown__item">👴 Seniorer</a></div></div>
+        <a href="../aterhämtning.html" class="navbar__nav-link">Återhämtning</a>
+        <a href="../sok.html" class="navbar__search-btn">🔍</a>
+      </div>
+      <button class="navbar__hamburger" aria-label="Öppna meny"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="navbar__mobile-menu">
+    <a href="../index.html" class="mobile-nav-link">🏠 Hem</a>
+    <a href="kostprogram.html" class="mobile-nav-link">🥗 Kostprogram</a>
+    <a href="makrorakning.html" class="mobile-nav-link">📊 Makroräkning</a>
+    <a href="maltidsplanering.html" class="mobile-nav-link">📅 Måltidsplanering</a>
+  </div>
+</nav>
+
+<section class="hero-sub">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">Hem</a><span class="breadcrumb__sep">›</span><a href="index.html">Kost</a><span class="breadcrumb__sep">›</span><span>Makroräkning</span></div>
+    <h1>📊 Makroräkning & Kalorier</h1>
+    <p>Förstå ditt energibehov och räkna makronäringsämnen för att nå dina mål.</p>
+  </div>
+</section>
+
+<section class="sektion">
+  <div class="container">
+
+    <!-- KALKYLATOR -->
+    <div class="makro-widget">
+      <h3>🧮 Makro- & Kaloriräknare</h3>
+      <p style="color:rgba(255,255,255,.8);margin-bottom:1.25rem;font-size:.93rem;">Beräknar ditt dagliga energibehov med Harris-Benedict-formeln.</p>
+      <form id="makro-form">
+        <div class="grid grid-2" style="gap:.75rem;">
+          <div>
+            <label for="mkr-vikt">Vikt (kg)</label>
+            <input type="number" id="mkr-vikt" placeholder="t.ex. 75" min="30" max="300" required>
+          </div>
+          <div>
+            <label for="mkr-längd">Längd (cm)</label>
+            <input type="number" id="mkr-längd" placeholder="t.ex. 175" min="100" max="250" required>
+          </div>
+          <div>
+            <label for="mkr-ålder">Ålder</label>
+            <input type="number" id="mkr-ålder" placeholder="t.ex. 30" min="10" max="100" required>
+          </div>
+          <div>
+            <label for="mkr-kön">Kön</label>
+            <select id="mkr-kön">
+              <option value="man">Man</option>
+              <option value="kvinna">Kvinna</option>
+            </select>
+          </div>
+          <div>
+            <label for="mkr-aktivitet">Aktivitetsnivå</label>
+            <select id="mkr-aktivitet">
+              <option value="1.2">Stillasittande (ingen träning)</option>
+              <option value="1.375">Lätt aktiv (1–3 dagar/vecka)</option>
+              <option value="1.55" selected>Måttligt aktiv (3–5 dagar/vecka)</option>
+              <option value="1.725">Mycket aktiv (6–7 dagar/vecka)</option>
+              <option value="1.9">Extremt aktiv (2× om dagen)</option>
+            </select>
+          </div>
+          <div>
+            <label for="mkr-mål">Mål</label>
+            <select id="mkr-mål">
+              <option value="behåll">Behåll vikt</option>
+              <option value="minska">Gå ner i vikt (−500 kcal)</option>
+              <option value="öka">Bygg muskler (+300 kcal)</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="margin-top:1rem;width:100%;justify-content:center;">Beräkna mitt behov</button>
+      </form>
+      <div id="makro-resultat" class="makro-resultat">
+        <div class="makro-resultat__rad"><span>Dagligt kaloribehov</span><span class="makro-resultat__val" id="mkr-res-kal">–</span></div>
+        <div class="makro-resultat__rad"><span>Protein (1,8 g/kg)</span><span class="makro-resultat__val" id="mkr-res-prot">–</span></div>
+        <div class="makro-resultat__rad"><span>Fett (25% av kalorier)</span><span class="makro-resultat__val" id="mkr-res-fett">–</span></div>
+        <div class="makro-resultat__rad"><span>Kolhydrater (resterande)</span><span class="makro-resultat__val" id="mkr-res-kol">–</span></div>
+      </div>
+    </div>
+
+    <!-- FÖRKLARING -->
+    <h2 class="sektion-rubrik">De tre makronäringsämnena</h2>
+    <div class="grid grid-3" style="margin-bottom:2rem;">
+      <div class="card">
+        <div class="card__body">
+          <div style="font-size:2rem;margin-bottom:.5rem;">🥩</div>
+          <h3>Protein</h3>
+          <p style="color:var(--grå-500);font-size:.85rem;margin-bottom:.75rem;">4 kcal per gram</p>
+          <p>Bygger och reparerar muskler, organ och immunförsvar. Ger mättnad. Viktigaste makrot för träning.</p>
+          <div class="info-box info-box--tips" style="margin-top:.75rem;">
+            <div class="info-box__rubrik">Rekommendation</div>
+            <p>1,6–2,2 g per kg kroppsvikt vid träning. Minst 0,8 g/kg utan träning.</p>
+          </div>
+          <h4 style="margin-top:1rem;margin-bottom:.4rem;font-size:.9rem;">Bra källor:</h4>
+          <ul class="checklista"><li>Kycklingbröst (31 g/100g)</li><li>Lax (25 g/100g)</li><li>Ägg (13 g/100g)</li><li>Kvarg (11 g/100g)</li><li>Tofu (17 g/100g)</li></ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__body">
+          <div style="font-size:2rem;margin-bottom:.5rem;">🍞</div>
+          <h3>Kolhydrater</h3>
+          <p style="color:var(--grå-500);font-size:.85rem;margin-bottom:.75rem;">4 kcal per gram</p>
+          <p>Primär energikälla vid intensiv träning. Lagras som glykogen i muskler och lever. Hjärnans favoritbränsle.</p>
+          <div class="info-box info-box--tips" style="margin-top:.75rem;">
+            <div class="info-box__rubrik">Rekommendation</div>
+            <p>3–7 g/kg/dag beroende på träningsvolym. Lägre vid viktminskning.</p>
+          </div>
+          <h4 style="margin-top:1rem;margin-bottom:.4rem;font-size:.9rem;">Bra källor:</h4>
+          <ul class="checklista"><li>Havregryn (67 g/100g)</li><li>Ris (28 g/100g kokt)</li><li>Sötpotatis (20 g/100g)</li><li>Banan (23 g/100g)</li><li>Bröd (45–50 g/100g)</li></ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__body">
+          <div style="font-size:2rem;margin-bottom:.5rem;">🥑</div>
+          <h3>Fett</h3>
+          <p style="color:var(--grå-500);font-size:.85rem;margin-bottom:.75rem;">9 kcal per gram</p>
+          <p>Hormonproduktion, vitaminabsorption (A, D, E, K), cellmembran och isolering. Inte fienden – välj rätt sorts fett.</p>
+          <div class="info-box info-box--tips" style="margin-top:.75rem;">
+            <div class="info-box__rubrik">Rekommendation</div>
+            <p>20–35% av totala kalorier. Prioritera omättat fett. Begränsa mättat.</p>
+          </div>
+          <h4 style="margin-top:1rem;margin-bottom:.4rem;font-size:.9rem;">Bra källor:</h4>
+          <ul class="checklista"><li>Avokado (15 g/100g)</li><li>Olivolja (100 g/100g)</li><li>Lax (13 g/100g)</li><li>Nötter (50–65 g/100g)</li><li>Ägg (11 g/100g)</li></ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAKROFÖRDELNING PER MÅL -->
+    <h2 class="sektion-rubrik">Makrofördelning per mål</h2>
+    <div class="tabell-wrapper" style="margin-bottom:2rem;">
+      <table>
+        <thead><tr><th>Mål</th><th>Protein</th><th>Kolhydrater</th><th>Fett</th><th>Kalorier</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Viktminskning</strong></td><td>30–35%</td><td>35–40%</td><td>25–30%</td><td>TDEE −300 till −500</td></tr>
+          <tr><td><strong>Muskelbygge</strong></td><td>25–30%</td><td>45–50%</td><td>20–25%</td><td>TDEE +200 till +400</td></tr>
+          <tr><td><strong>Prestation</strong></td><td>20–25%</td><td>50–60%</td><td>20–25%</td><td>TDEE (underhåll)</td></tr>
+          <tr><td><strong>LCHF/Keto</strong></td><td>20–25%</td><td>5–10%</td><td>65–75%</td><td>Varierar</td></tr>
+          <tr><td><strong>Underhåll/Hälsa</strong></td><td>20%</td><td>45–50%</td><td>30–35%</td><td>TDEE (underhåll)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- PRAKTISK GUIDE -->
+    <h2 class="sektion-rubrik">Hur du räknar makron i praktiken</h2>
+    <div class="steg-lista">
+      <div class="steg"><div class="steg__num">1</div><div class="steg__text"><h4>Beräkna ditt TDEE</h4><p>Använd kalkylatorn ovan eller räkna: BMR × aktivitetsfaktor. TDEE = Total Daily Energy Expenditure = ditt dagliga kaloribehov.</p></div></div>
+      <div class="steg"><div class="steg__num">2</div><div class="steg__text"><h4>Sätt ditt kalorimål</h4><p>Minus 300–500 kcal för viktminskning. Plus 200–300 kcal för muskelbygge. Samma som TDEE för underhåll.</p></div></div>
+      <div class="steg"><div class="steg__num">3</div><div class="steg__text"><h4>Bestäm protein först</h4><p>Räkna 1,8 g × din vikt i kg. En 80 kg person = 144 g protein = 576 kcal från protein.</p></div></div>
+      <div class="steg"><div class="steg__num">4</div><div class="steg__text"><h4>Fördela resterande kalorier på kolhydrater och fett</h4><p>Fördela enligt ditt mål (se tabell ovan). Justera efter hur du mår och presterar.</p></div></div>
+      <div class="steg"><div class="steg__num">5</div><div class="steg__text"><h4>Logga med en app</h4><p>Lifesum, MyFitnessPal eller Cronometer gör det enkelt att spåra intaget. Kör i 2–4 veckor för att se mönster.</p></div></div>
+    </div>
+
+    <div class="info-box info-box--varning" style="margin-top:2rem;">
+      <div class="info-box__rubrik">⚠️ Undvik att över-räkna</div>
+      <p>Makroräkning är ett verktyg, inte ett livsåskådning. Räkna i 4–8 veckor för att lära dig ditt intag, sedan kan de flesta fortsätta intuitivt. Obsessivt kaloriräknande kan leda till ett ohälsosamt förhållande till mat.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer__grid"><div><div class="footer__brand">🌿 Hälsokällan</div><p class="footer__tagline">Sveriges kompletta gratis hälsoresurs.</p></div><div><div class="footer__rubrik">Kost</div><a href="kostprogram.html" class="footer__länk">Kostprogram</a><a href="makrorakning.html" class="footer__länk">Makroräkning</a><a href="maltidsplanering.html" class="footer__länk">Måltidsplanering</a><a href="kosttillskott.html" class="footer__länk">Kosttillskott</a></div><div><div class="footer__rubrik">Träning</div><a href="../traning/styrketraning.html" class="footer__länk">Styrketräning</a><a href="../traning/hemmatraning.html" class="footer__länk">Hemmaträning</a></div><div><div class="footer__rubrik">Åldersgrupper</div><a href="../aldersgrupper/unga-vuxna.html" class="footer__länk">Unga Vuxna</a><a href="../aldersgrupper/seniorer.html" class="footer__länk">Seniorer</a></div></div><div class="footer__bottom"><span>© 2025 Hälsokällan</span></div></div></footer>
+<script src="../js/main.js"></script>
+</body>
+</html>
