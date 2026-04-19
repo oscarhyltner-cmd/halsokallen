@@ -173,6 +173,9 @@ h1,h2,h3,h4,h5,h6 { line-height: 1.25; color: var(--grå-900); }
   padding: .75rem 1.25rem 1rem;
   border-top: 1px solid var(--grå-200);
   background: #fff;
+  max-height: calc(100vh - 64px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .navbar__mobile-menu.öppen { display: block; }
 .mobile-nav-group { margin-bottom: .75rem; }
