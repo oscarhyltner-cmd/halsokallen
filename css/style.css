@@ -570,6 +570,7 @@ h1,h2,h3,h4,h5,h6 { line-height: 1.25; color: var(--grå-900); }
   color: var(--grön-500);
   font-weight: 700;
   min-width: 18px;
+  flex-shrink: 0;
   margin-top: .05rem;
 }
 
@@ -1202,9 +1203,21 @@ tr:nth-child(even) td { background: var(--grå-100); }
   .sektion { padding: 2.5rem 0; }
   .footer__grid { grid-template-columns: 1fr; }
   .hero__stats { gap: 1.25rem; }
+  .card__body { padding: 1.1rem; }
+  .program-card__body { padding: 1rem 1.1rem; }
+  .sektion-rubrik { font-size: 1.35rem; }
+  .steg__num { width: 32px; height: 32px; min-width: 32px; font-size: .85rem; }
+  table { font-size: .88rem; }
+  th, td { padding: .5rem .6rem; }
 }
 @media (max-width: 480px) {
   .grid-4 { grid-template-columns: 1fr; }
   .hero__actions { flex-direction: column; }
   .sök-bar { flex-direction: column; }
+  .container { padding: 0 .9rem; }
+  .card__body { padding: .9rem; }
+  .hero-sub { padding: 1.5rem 0; }
+  .checklista li { font-size: .9rem; }
+  .sektion-rubrik { font-size: 1.2rem; }
+  .pv-duo-grid { grid-template-columns: 1fr; }
 }
