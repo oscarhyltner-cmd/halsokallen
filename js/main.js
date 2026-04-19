@@ -18,6 +18,15 @@ function initHamburgerMenu() {
     const öppen = menu.classList.toggle('öppen');
     btn.setAttribute('aria-expanded', öppen);
   });
+
+  // Accordion för mobilmeny-grupper
+  menu.querySelectorAll('.mobile-nav-group__btn').forEach(grpBtn => {
+    grpBtn.addEventListener('click', () => {
+      const items = grpBtn.nextElementSibling;
+      const öppen = grpBtn.classList.toggle('öppen');
+      items.classList.toggle('öppen', öppen);
+    });
+  });
 }
 
 // --- Accordion ---

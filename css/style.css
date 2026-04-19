@@ -190,13 +190,55 @@ h1,h2,h3,h4,h5,h6 { line-height: 1.25; color: var(--grå-900); }
 }
 .mobile-nav-link {
   display: block;
-  padding: .5rem .5rem;
-  font-size: .95rem;
-  color: var(--grå-700);
-  border-radius: 6px;
-  transition: background .1s;
+  padding: .65rem .5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--grå-800);
+  border-bottom: 1px solid var(--grå-200);
+  transition: color .1s;
 }
-.mobile-nav-link:hover { background: var(--grön-50); color: var(--grön-700); }
+.mobile-nav-link:hover { color: var(--grön-700); }
+
+/* Accordion-grupp */
+.mobile-nav-group__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: .65rem .5rem;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--grå-200);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--grå-800);
+  cursor: pointer;
+  text-align: left;
+}
+.mobile-nav-group__pil {
+  display: inline-block;
+  transition: transform .2s;
+  font-style: normal;
+}
+.mobile-nav-group__btn.öppen .mobile-nav-group__pil {
+  transform: rotate(180deg);
+}
+.mobile-nav-group__items {
+  display: none;
+  background: var(--grå-50);
+  border-bottom: 1px solid var(--grå-200);
+}
+.mobile-nav-group__items.öppen { display: block; }
+.mobile-nav-sub {
+  display: block;
+  padding: .55rem 1rem;
+  font-size: .93rem;
+  color: var(--grå-700);
+  text-decoration: none;
+  border-bottom: 1px solid var(--grå-100);
+}
+.mobile-nav-sub:last-child { border-bottom: none; }
+.mobile-nav-sub:hover { color: var(--grön-700); background: var(--grön-50); }
 
 /* === HERO === */
 .hero {
