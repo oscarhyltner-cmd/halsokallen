@@ -566,20 +566,23 @@ h1,h2,h3,h4,h5,h6 { line-height: 1.25; color: var(--grå-900); }
   list-style: none;
 }
 .checklista li {
-  display: grid;
-  grid-template-columns: 20px 1fr;
-  gap: .5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: .6rem;
   font-size: .95rem;
   color: var(--grå-700);
-  align-items: start;
 }
 .checklista li::before {
   content: '✓';
   color: var(--grön-500);
   font-weight: 700;
+  min-width: 18px;
+  flex-shrink: 0;
   text-align: center;
-  padding-top: .05rem;
+  margin-top: .15rem;
 }
+.checklista li .li-inner { display: flex; flex-direction: column; gap: .2rem; }
+.checklista li .li-inner p { margin: 0; font-size: .9rem; color: var(--grå-500); }
 
 .punktlista { display: flex; flex-direction: column; gap: .4rem; padding-left: 1.25rem; }
 .punktlista li {
